@@ -3,10 +3,12 @@
 * Cross-Platform (Windows, Linux, macOS)
 * Visual Studio 2017
 * Visual Studio Code
+* SQL Server 2017
 * .NET Core 2.1
 * ASP.NET Core 2.1
 * Entity Framework Core 2.1
 * C# 7.2
+* SPA (Single Page Application)
 * Angular 6.0.3
 * Typescript 2.7.2
 * HTML5
