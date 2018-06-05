@@ -5,7 +5,7 @@ using Solution.Model.Enums;
 
 namespace Solution.Web.UserInterface.Attributes
 {
-	[AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, AllowMultiple = true)]
+	[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
 	public sealed class AuthorizationAttribute : AuthorizeAttribute
 	{
 		public AuthorizationAttribute(params Roles[] roles)

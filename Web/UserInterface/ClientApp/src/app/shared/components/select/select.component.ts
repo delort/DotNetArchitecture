@@ -1,6 +1,6 @@
-﻿import { Component, ElementRef, Input } from "@angular/core";
+import { Component, ElementRef, Input } from "@angular/core";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
-import { OptionModel } from "../../models/option.model";
+import { OptionModel } from "./option.model";
 
 @Component({
 	providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: AppSelectComponent, multi: true }],

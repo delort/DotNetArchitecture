@@ -47,7 +47,7 @@ namespace Solution.Web.UserInterface.Extensions
 				json.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
 			}
 
-			services.AddMvc(Mvc).SetCompatibilityVersion(CompatibilityVersion.Latest).AddJsonOptions(Json);
+			services.AddMvc(Mvc).AddJsonOptions(Json);
 		}
 
 		public static void AddSpaStaticFilesCustom(this IServiceCollection services)

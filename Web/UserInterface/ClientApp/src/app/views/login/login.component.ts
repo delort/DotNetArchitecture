@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { AuthenticationModel } from "../../shared/models/authentication.model";
-import { AuthenticationService } from "../../shared/services/authentication.service";
+import { AuthenticationModel } from "../../models/authentication.model";
+import { AuthenticationService } from "../../services/authentication.service";
 
 @Component({ selector: "app-login", templateUrl: "./login.component.html" })
 export class LoginComponent {

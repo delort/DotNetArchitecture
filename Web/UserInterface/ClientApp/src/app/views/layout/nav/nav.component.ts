@@ -1,5 +1,5 @@
-﻿import { Component } from "@angular/core";
-import { AuthenticationService } from "../../../shared/services/authentication.service";
+import { Component } from "@angular/core";
+import { AuthenticationService } from "../../../services/authentication.service";
 
 @Component({ selector: "app-nav", templateUrl: "./nav.component.html" })
 export class NavComponent {

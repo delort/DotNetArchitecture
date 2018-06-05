@@ -1,10 +1,10 @@
 import { HttpHandler, HttpInterceptor, HttpRequest } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { AuthenticationService } from "../services/authentication.service";
+import { TokenService } from "../services/token.service";
 
 @Injectable()
 export class CustomHttpInterceptor implements HttpInterceptor {
-	constructor(private readonly authenticationService: AuthenticationService) { }
+	constructor(private readonly tokenService: TokenService) { }
 
 	intercept(request: HttpRequest<any>, next: HttpHandler) {
 		let url = request.url;
@@ -14,9 +14,7 @@ export class CustomHttpInterceptor implements HttpInterceptor {
 		}
 
 		request = request.clone({
-			setHeaders: {
-				Authorization: `Bearer ${this.authenticationService.getToken()}`
-			},
+			setHeaders: { Authorization: `Bearer ${this.tokenService.get()}` },
 			url
 		});
 
